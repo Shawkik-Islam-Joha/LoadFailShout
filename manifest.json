@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Failure Sound",
+  "version": "1.0",
+  "description": "Plays FAAAAHH sound when page fails to load",
+  "permissions": ["webNavigation"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
