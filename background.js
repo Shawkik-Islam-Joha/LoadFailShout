@@ -1,9 +1,10 @@
 chrome.webNavigation.onErrorOccurred.addListener((details) => {
 
-    // Only main page
-    if (details.frameId !== 0) return;
+    // Prevent infinite loop
+    if (details.url.includes("fail.html")) {
+        return;
+    }
 
-    // Open our own fail page
     chrome.tabs.update(details.tabId, {
         url: chrome.runtime.getURL("fail.html")
     });

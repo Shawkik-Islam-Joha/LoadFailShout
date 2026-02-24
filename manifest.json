@@ -1,11 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Load Fail Shout",
+  "name": "LoadFailShout",
   "version": "1.0",
-  "permissions": ["webNavigation", "tabs"],
+  "description": "Redirects and screams on fail",
+
   "background": {
     "service_worker": "background.js"
   },
+
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
   "web_accessible_resources": [
     {
       "resources": ["sound.mp3"],

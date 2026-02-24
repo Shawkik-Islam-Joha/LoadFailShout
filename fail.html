@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FAAAAHH</title>
+  <title>FAIL</title>
+  <link rel="stylesheet" href="">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      overflow: hidden;
+
+      animation: blink 0.3s infinite;
+    }
+
+    h1 {
+      color: white;
+      font-size: 80px;
+      font-family: Arial, sans-serif;
+      letter-spacing: 10px;
+
+      animation: shake 0.15s infinite, glitch 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { background: black; }
+      50% { background: #111; }
+      100% { background: black; }
+    }
+
+    @keyframes shake {
+      0% { transform: translate(0,0); }
+      25% { transform: translate(-4px,3px); }
+      50% { transform: translate(4px,-3px); }
+      75% { transform: translate(-3px,-4px); }
+      100% { transform: translate(0,0); }
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 3px 3px red, -3px -3px cyan; }
+      50% { text-shadow: -3px 3px red, 3px -3px cyan; }
+      100% { text-shadow: 3px 3px red, -3px -3px cyan; }
+    }
+  </style>
 </head>
-<body style="background:black; color:white; text-align:center; margin-top:200px; font-size:40px;">
-    FAAAAHHHHH
-    <script src="fail.js"></script>
+
+<body>
+  <h1>FAAAHHHHH</h1>
+
+  <script src="fail.js"></script>
 </body>
 </html>
