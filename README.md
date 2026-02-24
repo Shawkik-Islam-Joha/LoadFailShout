@@ -1,22 +1,32 @@
 # 🔊 LoadFailShout
 
-A simple Chrome/Edge extension that plays a dramatic "FAAAAHH" sound whenever a webpage fails to load due to connection errors.
+A simple Chrome / Microsoft Edge extension that plays a dramatic **"FAAAAHH"** sound whenever a webpage fails to load due to connection errors.
+
+---
 
 ## 🚀 Features
-- Detects navigation errors
-- Replaces failed page
-- Plays custom sound effect
-- Works on Chrome and Microsoft Edge
 
-## 📦 Installation (Developer Mode)
+- 🔍 Detects navigation errors
+- 🔊 Plays dramatic sound effect
+- 🌐 Works on Chrome and Microsoft Edge
+- ⚡ Lightweight and fast
+- 🔐 Minimal permissions required
 
-1. Go to `chrome://extensions/` or `edge://extensions/`
-2. Enable Developer Mode
-3. Click "Load unpacked"
-4. Select the extension folder
+---
 
-## 🧠 How It Works
-Uses `chrome.webNavigation.onErrorOccurred` to detect connection failures and redirects to a custom fail page.
+## 📦 Installation Guide
 
-## 📜 Version
-v1.0 – Initial Release
+### 🛠️ Option 1: Install in Developer Mode (For Testing / GitHub Users)
+
+Use this method if you downloaded the source code manually.
+
+#### Step 1 — Download the Code
+
+**Option A — Download ZIP**
+1. Click the green **Code** button on GitHub
+2. Click **Download ZIP**
+3. Extract the ZIP file
+
+**Option B — Clone using Git**
+```bash
+git clone https://github.com/Shawkik-Islam-Joha/LoadFailShout.git
