@@ -1,14 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Failure Sound",
+  "name": "Load Fail Shout",
   "version": "1.0",
-  "permissions": [
-    "webNavigation",
-    "scripting",
-    "tabs"
-  ],
+  "permissions": ["webNavigation", "tabs"],
   "background": {
     "service_worker": "background.js"
   },
-  "host_permissions": ["<all_urls>"]
+  "web_accessible_resources": [
+    {
+      "resources": ["sound.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
